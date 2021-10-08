@@ -1,0 +1,121 @@
+applications:
+  - name: ReactApp
+    memory: 512M
+    disk_quota: 1024M
+    instances: 1
+language: nodejs
+default_versions:
+  - name: node
+    version: 16.x
+include_files:
+  - CHANGELOG
+  - CONTRIBUTING.md
+  - ISSUE_TEMPLATE
+  - LICENSE
+  - NOTICE
+  - PULL_REQUEST_TEMPLATE
+  - README.md
+  - VERSION
+  - bin/compile
+  - bin/detect
+  - bin/finalize
+  - bin/release
+  - bin/supply
+  - manifest.yml
+  - profile/appdynamics-setup.rb
+  - profile/newrelic-setup.sh
+  - profile/nodejs.sh
+dependency_deprecation_dates:
+  - version_line: 12.x.x
+    name: node
+    date: 2022-04-01
+    link: https://github.com/nodejs/Release
+  - version_line: 14.x.x
+    name: node
+    date: 2023-04-30
+    link: https://github.com/nodejs/Release
+  - version_line: 15.x.x
+    name: node
+    date: 2021-06-01
+    link: https://github.com/nodejs/Release
+  - version_line: 16.x.x
+    name: node
+    date: 2024-04-30
+    link: https://github.com/nodejs/Release
+dependencies:
+  - name: node
+    version: 12.22.5
+    uri: https://buildpacks.cloudfoundry.org/dependencies/node/node_12.22.5_linux_x64_cflinuxfs3_64b6b61b.tgz
+    sha256: 64b6b61bb9e67f9a5f73d18aa2142f6c05dbe479e409c48096489dc8d10deda0
+    cf_stacks:
+      - cflinuxfs3
+    source: https://nodejs.org/dist/v12.22.5/node-v12.22.5.tar.gz
+    source_sha256: 119cf027c9ba0a71268914d02d2aa430f7eeb6adef5a9fa0bc9ed6dd1b12cd8c
+  - name: node
+    version: 12.22.6
+    uri: https://buildpacks.cloudfoundry.org/dependencies/node/node_12.22.6_linux_x64_cflinuxfs3_3cd51c36.tgz
+    sha256: 3cd51c36b69289ee0dc908def2f775782bad26f8359797c783d17c5234e7c743
+    cf_stacks:
+      - cflinuxfs3
+    source: https://nodejs.org/dist/v12.22.6/node-v12.22.6.tar.gz
+    source_sha256: 02763dcf6532a997143b03c1f7d23552a3bd19ddcad1fd2425956db7596cbc9c
+  - name: node
+    version: 14.17.6
+    uri: https://buildpacks.cloudfoundry.org/dependencies/node/node_14.17.6_linux_x64_cflinuxfs3_d7ed6f12.tgz
+    sha256: d7ed6f1277ca5ec3973a277424e86e70440383585100b82382391171fe34afb8
+    cf_stacks:
+      - cflinuxfs3
+    source: https://nodejs.org/dist/v14.17.6/node-v14.17.6.tar.gz
+    source_sha256: f64559c87faa2f1ce93c3d2cd09723af254ec320a53cbfd1a2ba8fba28e488d0
+  - name: node
+    version: 14.18.0
+    uri: https://buildpacks.cloudfoundry.org/dependencies/node/node_14.18.0_linux_x64_cflinuxfs3_873f5176.tgz
+    sha256: 873f5176b13a42a6a908f17e3caccabe7e0abd7510cc569f2a0a9ecd8c25f844
+    cf_stacks:
+      - cflinuxfs3
+    source: https://nodejs.org/dist/v14.18.0/node-v14.18.0.tar.gz
+    source_sha256: 2272312d7eb48a28e982af395142d916385b0572380d07c89f9abd9c97810189
+  - name: node
+    version: 15.13.0
+    uri: https://buildpacks.cloudfoundry.org/dependencies/node/node_15.13.0_linux_x64_cflinuxfs3_d240c285.tgz
+    sha256: d240c2853f19e57cfacccf0f1fd7a6c787f519bd6e7507fd38b248d8d71f4ef2
+    cf_stacks:
+      - cflinuxfs3
+    source: https://nodejs.org/dist/v15.13.0/node-v15.13.0.tar.gz
+    source_sha256: 96926e5b8f2f3ea805596448f01b16115882f3a594e2e999dc7349f80b3ec1f8
+  - name: node
+    version: 15.14.0
+    uri: https://buildpacks.cloudfoundry.org/dependencies/node/node_15.14.0_linux_x64_cflinuxfs3_306ae27c.tgz
+    sha256: 306ae27c61ae7b017f48f5f79ec884a9283ab3e488497b7490ed3d0716d86f59
+    cf_stacks:
+      - cflinuxfs3
+    source: https://nodejs.org/dist/v15.14.0/node-v15.14.0.tar.gz
+    source_sha256: f3a35c1b29b58846575085fdee7774d78b75ff4cf1e52572afce7f38685b159a
+  - name: node
+    version: 16.8.0
+    uri: https://buildpacks.cloudfoundry.org/dependencies/node/node_16.8.0_linux_x64_cflinuxfs3_8abc8746.tgz
+    sha256: 8abc8746b6701832d1c3567e96116c64dd5316ceac4d7ae4c528ad8f41a9514a
+    cf_stacks:
+      - cflinuxfs3
+    source: https://nodejs.org/dist/v16.8.0/node-v16.8.0.tar.gz
+    source_sha256: 0cc13572bc7c5a9bf7a2c5cb2800ff045780e43d0fa6e3eb0f1be46b4bf9a1c6
+  - name: node
+    version: 16.10.0
+    uri: https://buildpacks.cloudfoundry.org/dependencies/node/node_16.10.0_linux_x64_cflinuxfs3_678f0f04.tgz
+    sha256: 678f0f04766855c7dba3191da7d2957368c8f2a7cd1f6c17559a062514d8eb70
+    cf_stacks:
+      - cflinuxfs3
+    source: https://nodejs.org/dist/v16.10.0/node-v16.10.0.tar.gz
+    source_sha256: 69b09bb0c4cd9add7eb501b1625a405b15d6ce53596e98b863c8d066e0b6b202
+  - name: yarn
+    version: 1.22.15
+    uri: https://buildpacks.cloudfoundry.org/dependencies/yarn/yarn_1.22.15_linux_noarch_any-stack_3753e989.tgz
+    sha256: 3753e98930fce47be79c1bf91acad0f2a2c9b3affe5035f411f46c606a1ae0d0
+    cf_stacks:
+      - cflinuxfs3
+    source: https://github.com/yarnpkg/yarn/releases/download/v1.22.15/yarn-v1.22.15.tar.gz
+    source_sha256: 0c2841b9423f0fb9657ae6b18873f39551396ec242bfb882b11bed9e4648235e
+pre_package: scripts/build.sh
+  © 2021 GitHub, Inc.
+  Terms
+  Privacy
